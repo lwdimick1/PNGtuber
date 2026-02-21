@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>PNGTuber</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="controls">
-    <label>Sensitivity</label>
-    <input type="range" id="sensitivity" min="0" max="100" value="20">
-  </div>
+<script>
+  const avatar = document.getElementById("avatar");
 
-  <img id="avatar" src="idle.png">
-
-  <script src="script.js"></script>
-</body>
-</html>
+  // test switching every second
+  setInterval(() => {
+    if (avatar.src.includes("idle.png")) {
+      avatar.src = "talk.png";
+    } else {
+      avatar.src = "idle.png";
+    }
+  }, 1000);
+</script>
