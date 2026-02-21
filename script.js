@@ -1,6 +1,6 @@
 const avatar = document.getElementById("avatar");
 
-// For testing: just switch images every 1 second
+// test switching every second
 setInterval(() => {
   if (avatar.src.includes("idle.png")) {
     avatar.src = "talk.png";
